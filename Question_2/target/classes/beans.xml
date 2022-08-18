@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- constructor based application -->
+<!-- <bean id="college" class="com.godigit.ConstructorBasedApplication.College">
+<constructor-arg value="THAPAR UNIVERSITY"></constructor-arg>
+<constructor-arg value="1234"></constructor-arg>
+<constructor-arg value="patiala"></constructor-arg>
+</bean> -->
+
+<!-- setter based application -->
+<!-- <bean id="com" class="com.godigit.setter_based.Company">
+<property name="name" value="Go digit"></property>
+<property name="id" value="01"></property>
+<property name="address" value="bangalore"></property>
+
+</bean> -->
+
+<!-- field based or object based application -->
+<bean id="check" class="com.godigit.field_based.Movie">
+<property name="movieName" value="gray man"></property>
+<property name="a" ref="obj"></property>
+
+</bean>
+
+<bean id="obj" class="com.godigit.field_based.Actor">
+<property name="actorName" value="chris evans"></property>
+<property name="mobileNumber" value="100"></property>
+
+</bean>
+
+</beans>
